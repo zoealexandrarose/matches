@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Product List Front End Test</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- not implementing CDN but could do for ease -->
+        <!-- using Bootstrap - reg CSS could be time consuming -->
+        <link rel="stylesheet" href="css/style.css"/>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <main class="container">
+            <section class="row">
+                <div class="col-12 text-center">
+                    <h1>Product List Page Test by Zoë Rose</h1>
+                </div>
+            </section>
+
+            <section class="row" id="cards"></section>
+            <section class="row text-center mb-4">
+                <div class="col-12"><button type="button" class="btn btn-primary" id="loadmorebtn" onclick="loadMore();">LOAD MORE</button></div>
+                <!-- On click - do something. Entire function does the load more each time -->
+            </section>
+            <input id="lastindex" type="hidden" value="0">
+        </main>
+    </body>
+</html>
